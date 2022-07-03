@@ -13,4 +13,7 @@ from calculate_alpha_length import cal_alpha_length_of_str
 
 test_str='have'
 print(f"Whether {test_str} in str: ",exam_if_str_this_in(file, test_str))
+
+test_str='day'
+print(f"Whether {test_str} in str: ",exam_if_str_this_in(file, test_str))
 print("The count of alphabets: ",cal_alpha_length_of_str(file))
