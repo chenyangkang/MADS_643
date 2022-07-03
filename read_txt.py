@@ -3,7 +3,7 @@ import numpy as np
 file = open('hello.txt').read()
 print('------------------')
 print('OK! Let\'s try some thing!')
-
+print('balabalabala')
 
 print('------------------')
 print(file)
