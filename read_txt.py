@@ -3,12 +3,7 @@ import numpy as np
 file = open('hello.txt').read()
 print('------------------')
 print('OK! Let\'s try some thing!')
-<<<<<<< HEAD
 print('yes!')
-=======
-
-
->>>>>>> parent of 1248ee7... add try something
 print('------------------')
 print(file)
 print('------------------')
