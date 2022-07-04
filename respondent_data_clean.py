@@ -5,7 +5,7 @@ def merge_files(contact_info_file, other_info_file, output_file):
     other_info_file = pd.read_csv(other_info_file)
     merged = pd.merge(contact_info_file, other_info_file, left_on="respondent_id",\
                     right_on="respondent_id", how="outer")
-    merged['birthdate'] = pd.to_datetime(merged['birthdate'])
+    merged['birthdate'] = [i.date() for i in pd.to_datetime(merged['birthdate'])]
     merged.to_csv(output_file,index=False)
 
 if __name__=="__main__":
